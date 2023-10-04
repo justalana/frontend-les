@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #EDF0F7;
+}
+
+/**HEADER**/
+nav {
+    background-color: #FFFFFF;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    border-bottom: 2px solid #1A202C;
+}
+
+nav a {
+    color: #717D96;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/**MAIN**/
+main {
+    padding: 50px 0;
+}
+
+.center-container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 650px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 5px 0px 5px 0px;
+}
+
+#input-box {
+    width: 500px;
+    padding: 10px 0px 10px 5px;
+
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    padding: 10px 0px 10px 0px;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+input:valid {
+    border: 3px solid green;
+}
+
+textarea:invalid {
+    border: 3px solid red;
+}
+textarea:valid {
+    border: 3px solid green;
+}
+
+@media (max-width: 600px) {
+    .input-align {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #input-box {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .radio-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}

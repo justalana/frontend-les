@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 16px;
+    background-color: #F4F2DE;
+}
+
+a {
+    color: #1B2220;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4F2DE;
+    background-color: #457B9D;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+#welkom-text {
+    font-size: medium;
+}
+
+.nav {
+    padding: 20px;
+}
+
+.title {
+    background-color: #A0ABC0;
+    padding: 25px 40px;
+    border-radius: 5px;
+}
+
+.recept-flex {
+    display: flex;
+    gap: 20px;
+}
+
+#recept-text {
+    font-size: 1rem;
+}
+
+.recept-box {
+    border-style: solid;
+    border-color: #1B2220;
+    border-width: 2px;
+    border-radius: 5px;
+    padding-left: 15px;
+    flex-basis: 600px;
+}
+
+.button {
+    background-color: #457B9D;
+    color: #F4F2DE;
+    padding: 10px 50px 10px 50px;
+    border-style: solid;
+    border-color:#457B9D;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #F4F2DE;
+    color: #457B9D;
+}
+
+img {
+    float: right;
+    width: 200px;
+    margin: 20px;
+    border-radius: 5px;
+}

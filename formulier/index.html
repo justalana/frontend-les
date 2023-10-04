@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hoofdpagina</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="center-container">
+            <section>
+                <h1>Homepage</h1>
+            </section>
+
+            <form action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php" method="POST">
+                <div class="input-align">
+                    <label for="name">Naam*</label>
+                    <input type="text" name="name" id="input-box" placeholder="Vul hier uw naam in..." required>
+                </div>
+                
+                <div class="input-align">
+                    <label for="email">E-mail*</label>
+                    <input type="email" name="email" id="input-box" placeholder="Vul hier uw email in..." required>
+                </div>
+                
+                <div class="input-align">
+                    <label for="city">Woonplaats*</label>
+                    <input type="text" name="city" id="input-box" placeholder="Vul hier uw woonplaats in..." required>
+                </div>
+                
+                <div class="input-align">
+                    <label for="birthdate">Geboortedatum*</label>
+                    <input type="date" name="birthdate" id="input-box" required>
+                </div>
+                
+                <div class="input-align">
+                    <label for="send-t0">Verstuur naar*</label>
+                    <select id="input-box" name="send-to" required>
+                        <option value="">Kies docent</option>
+                        <option value="0">Antwan</option>
+                        <option value="1">Bas</option>
+                        <option value="2">Erik</option>
+                        <option value="3">Martijn</option>
+                    </select>
+                </div>
+                
+                <div class="input-align">
+                    <p>Categorie*</p>
+                    <section class="radio-buttons" required>
+                        <div>
+                            <input type="radio" id="category" name="category" value="algemeen">
+                            <label for="category">Algemeen</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="category" name="category" value="programmeren">
+                            <label for="category">Programmeren</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="category" name="category" value="cle">
+                            <label for="category">CLE</label>
+                        </div>
+                    </section>
+                </div>
+                
+                <div>
+                    <p><label for="question">Jouw vraag:*</label></p>
+                    <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden" required>
+                    <label for="voorwaarden">Ik ga akkoord met de algemene voorwaarden*</label>
+                </div>
+                
+                <button type="submit">Verzenden</button>
+            </form>
+
+            <p>* Verplichte velden</p>
+        </div>
+    </main>
+    
+</body>
+</html>

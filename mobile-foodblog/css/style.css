@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap');
+
+body {
+    margin: 0vw 10vw 10vw 10vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+/**HEADER**/
+
+nav {
+    margin-top: 20px;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+}
+
+a {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease-out;
+}
+
+a:hover {
+    background-color: green;
+    color: white;
+    text-decoration: underline;
+}
+
+.intro {
+    background-image:url(../images/kitchen-counter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    border: solid green;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 100px 40px 100px 40px;
+}
+
+.intro-text {
+    color: white;
+}
+
+#kookbook-img {
+    border: solid green;
+    border-radius: 50%;
+    width: 200px;
+    margin-left: 50px;
+}
+
+/**MAIN**/
+
+#recepten-title {
+    margin-top: 70px;
+}
+
+.recept-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.recept-box {
+    background-color: white;
+    border-style: solid;
+    border-color: #1B2220;
+    border-width: 2px;
+    border-radius: 5px;
+    flex-basis: 100vw;
+    transition: all 0.5s ease-out;
+    filter: saturate(10%);
+}
+
+.recept-box:hover {
+    transform:scale(1.2) translate(30px, 60px);
+    filter:saturate(100%);
+}
+
+#recept-text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#food-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    transition: all 0.4s ease-out;
+}
+
+.button:hover {
+    background-color: white;
+    color: green;
+}
+
+/**CHATWINDOW**/
+.chatwindow {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    font-size: 1.2rem;
+    background-color: green;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    transform: translateX(300px);
+    animation: show-chat 1s forwards 5s;
+}
+
+@keyframes show-chat {
+    0% {
+        transform: translateX(300px);
+        filter:blur(10px)
+    }
+
+    100% {
+        transform: none;
+        filter:none;
+    }
+}
+
+#chat-content {
+    flex: 1;
+    background-color: rgb(199,199,199);
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+/**@MEDIA DINGEN**/
+@media (max-width: 650px) {
+    /**HEADER**/
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    a:hover {
+        border-bottom: solid green;
+        color: green;
+    }
+
+    .intro {
+        border: solid green;
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 20px 40px 20px 40px;
+    }
+
+    #kookbook-img {
+        display: none;
+    }
+
+    /**MAIN**/
+    .recept-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
